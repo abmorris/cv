@@ -1,8 +1,9 @@
 \documentclass{simplecv}
 \usepackage{geometry}
+\usepackage{hyperref}
 \geometry{
-	left=20mm,
-	right=20mm,
+	left=15mm,
+	right=15mm,
 	top=10mm,
 	bottom=20mm
 }
@@ -20,13 +21,13 @@
 \topictitlefont{\fontfamily{\typeface}\selectfont}
 \setlength{\parindent}{0cm}
 \begin{document}
-	\maketitle
+	\maketitle\vspace{-2em}
 	\fontfamily{\typeface}\selectfont
 	\section{Personal statement}
 	I am a PhD student with the LHCb group at the University of Edinburgh.
 	My research experience is in studies of four-body charmless hadronic decays of $B$ mesons.
 	\section{Education}
-	\topictitle{PhD in experimental particle physics}{University of Edinburgh}{2013 --- 2017}
+	\topictitle{PhD in experimental particle physics}{University of Edinburgh}{2013 ---}
 	\begin{topic}
 		\itemsep-0.3em
 		\item[Thesis title]{\textit{Measurements of charmless $B_s$ meson decays at LHCb}}
@@ -41,8 +42,8 @@
 		\item[Classification]{2:1}
 	\end{topic}
 	\section{Physics analysis}
-	\topictitle{Amplitude analysis of $B^0_s \to \phi K^{+}K^{-}$ decays}{}{2015 --- 2017}
-	An amplitude fit to ${B^0_s \to \phi K^{+}K^{-}}$ events with ${m(K^{+}K^{-})<1.8}$~GeV, in which the first observation of the decay ${B^0_s \to \phi f_2^\prime(1525)}$ is made, and its branching fraction and longitudinal polarisation fractions are measured.
+	\topictitle{Amplitude analysis of $B^0_s \to \phi K^{+}K^{-}$ decays}{}{2015 ---}
+	An amplitude fit to ${B^0_s \to \phi K^{+}K^{-}}$ events with ${m(K^{+}K^{-})<1.8}$~GeV. The decay ${B^0_s \to \phi f_2^\prime(1525)}$ is observed for the first time, and measurements are made of its branching fraction and longitudinal polarisation fraction.
 	\\[0.5em]
 	This is my primary thesis work, and I was responsible for performing the analysis, from selection, modelling the acceptance, signal and background, fitting the data and calculating results and systematic uncertainties.
 	The amplitude fit was performed using Edinburgh's RapidFit fitting framework, which I modified to make more suited to the task.
@@ -50,7 +51,7 @@
 	\\[0.5em]
 	\topictitle{Measurement of the $B^0_s \to \phi\phi$ branching fraction and search for $B^0 \to \phi \phi$}{}{2014 --- 2015}
 	The $B^0_s \to \phi\phi$ branching fraction was measured using $B^0 \to \phi K^{*0}$ for normalisation, resulting in a factor of five reduction in the statistical uncertainty compared to the previous best result.
-	This is an important normalisation channel for charmless $B$ decay measurements, such as $B_s \to \phi \pi^{+} \pi^{-}$.
+%	This is an important normalisation channel for charmless $B$ decay measurements, such as $B_s \to \phi \pi^{+} \pi^{-}$.
 	In addition, a search was performed for the suppressed $B^0 \to \phi\phi$ decay, and an upper limit placed on its branching fraction, which is a factor of seven improvement comapared to the previous best result.
 	\\[0.5em]
 	This analysis forms part of my thesis work, and I was responsible for the mass fits and most of the calculations of efficiencies and systematics, as well as setting the limit on the $B^0$ mode using the $CL_s$ method.
@@ -58,13 +59,13 @@
 	\topictitle{Measurement of CP violation in $B^0_s \to \phi\phi$ decays}{}{2013 --- 2014}
 	A time-dependent angular fit performed to $B^0_s \to \phi\phi$ events to extract the weak phase $\phi_s$, which is expected to be close to zero due to cancellation between the leading-order mixing and decay diagrams.
 	\\[0.5em]
-	I was responsible for parametrising the peaking backgrounds and performing fits to the $\phi\phi$ invariant mass.
+	I was responsible for parametrising the peaking backgrounds and performing fits to the $\phi\phi$ invariant mass to obtain event yields.
 	\section{Hardware and operations}
-	\topictitle{LHCb control room shifts}{}{2015 --- 2016}
-	\topictitle{RICH piquet shifts}{}{2015 --- 2016}
-	\topictitle{Ion feedback monitoring of the RICH HPDs}{}{2015 --- 2016}
-	\topictitle{RICH upgrade testbeam}{}{2014 --- 2016}
-	\topictitle{Performance of MaPMTs in magnetic fields for the RICH upgrade}{}{2013 --- 2014}
+	\dateditem{LHCb control room shifts (4$\times$ shift leader \& 11$\times$ data manager)}{2015 --- 2016}
+	\dateditem{RICH piquet shifts (3 weeks)}{2015 --- 2016}
+	\dateditem{Ion feedback monitoring of the RICH HPDs}{2015 --- 2016}
+	\dateditem{RICH upgrade testbeam}{2014 --- 2016}
+	\dateditem{Performance of MaPMTs in magnetic fields for the RICH upgrade}{2013 --- 2014}\\[-3em]
 	\section{Schools, workshops and conferences}
 	\topictitle{Exotic hadron spectroscopy workshop}{}{University of Edinburgh, September 2016}[0.5em]
 	\topictitle{Heavy Quarks and Leptons (HQL) conference}{Talk: \textit{Charmless $b$-meson and $b$-baryon decays at LHCb}}{Virginia Tech, May 2016}\\[0.5em]
@@ -72,20 +73,20 @@
 	\topictitle{UK HEP forum: ``Anomalies and Deviations'' workshop}{Poster: \textit{Measurement of the $B_s \to \phi \phi$ branching fraction and search for $B^0 \to \phi \phi$ at LHCb}}{STFC, Abingdon, November 2015}\\[0.5em]
 	\topictitle{European School of High-Energy Physics}{}{Bansko, Bulgaria, September 2015}[0.5em]
 	\topictitle{Young Experimentalists and Theorists Institute (YETI) workshop}{}{Durham University, January 2015}[0.5em]
-	\topictitle{B-physics at frontier machines (Beauty) conference}{Poster: \textit{Measurement of CP violation in $B^0_s \to \phi\phi$ decays}}{University of Edinburgh, July 2014}\\[0.5em]
 	\topictitle{STFC HEP summer school}{}{University of Warwick, September 2014}[0.5em]
+	\topictitle{B-physics at frontier machines (Beauty) conference}{Poster: \textit{Measurement of CP violation in $B^0_s \to \phi\phi$ decays}}{University of Edinburgh, July 2014}\\[-2em]
 	\section{Public outreach}
-	\dateditem{Participant in an `Ask Me Anything' session organised by the CERN Press Office on \textit{reddit.com}}{May 2015}
+	\dateditem{Participant in an \href{http://cds.cern.ch/record/2024978}{`Ask Me Anything' session organised by CERN on \textit{reddit.com}}}{May 2015}
 	\dateditem{Participant in a \textit{Speed Science} event at the \textit{Glasgow Science Festival}}{June 2014}
-	\dateditem{Demonstrator at the \textit{Discovering the Higgs Boson} exibit at the \textit{Big Bang Fair}, Birmingham NEC}{March 2014}
+	\dateditem{Demonstrator at the \textit{Discovering the Higgs Boson} exibit at the \textit{Big Bang Fair}, Birmingham NEC}{March 2014}\\[-3em]
 	\section{Skills}
 	\begin{itemize}
 		\itemsep-0.3em
-		\item Data analysis techniques, including multivariate selection, maximum-likelihood fitting, amplitude analysis and limit-setting
-		\item Proficiency with C, C++, Python and shell scripting
-		\item Experience with ROOT (incl. TMVA, RooFit and RooStats), GSL, Boost and the LHCb software (incl. Gauss and DaVinci)
-		\item Experience using parallel computing resources, such the Edinburgh and CERN batch services and the LHC Grid (via DIRAC and Ganga)
-		\item Experience with collaborative software development and version control systems (Git and SVN)
+		\item HEP data analysis techniques, including multivariate selection, maximum-likelihood fitting, amplitude analysis and limit-setting
+		\item Proficiency with C++, Python and shell scripting
+		\item Familiarity with ROOT (incl. TMVA, RooFit and RooStats), GSL, Boost and the LHCb software
+		\item Experience using parallel computing resources, such the Edinburgh and CERN batch services and the LHC Grid
+		\item Frequent user of version control systems (Git and SVN) and experience with collaborative software development
 	\end{itemize}
 	\section{Publications}
 \end{document}
