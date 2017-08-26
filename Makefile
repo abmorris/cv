@@ -4,7 +4,8 @@ BATCH = -interaction=batchmode
 LATEX = pdflatex -shell-escape $(BATCH) -output-directory=$(1) $(2) $(SILENT)
 BIBTEX = bibtex -terse $(1) $(SILENT)
 
-BUILDCOMMAND = $(call LATEX,$(2),$(1)) && $(call LATEX,$(2),$(1)) && $(call LATEX,$(2),$(1))
+#BUILDCOMMAND = $(call LATEX,$(2),$(1)) && $(call LATEX,$(2),$(1)) && $(call LATEX,$(2),$(1))
+BUILDCOMMAND = rubber -d $(1)
 
 
 TEXSOURCES = $(shell find . -type f -name "*.tex")
