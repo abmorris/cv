@@ -12,8 +12,7 @@ TEXSOURCES = $(shell find . -type f -name "*.tex")
 BIBSOURCES = $(shell find . -type f -name "*.bib")
 BSTSOURCES = $(shell find . -type f -name "*.bst")
 STYSOURCES = $(shell find . -type f -name "*.sty")
-FIGSOURCES = $(shell find ./figs/ -type f -name "*.pdf")
-ALLSOURCES = $(TEXSOURCES) $(BIBSOURCES) $(BSTSOURCES) $(STYSOURCES) $(FIGSOURCES)
+ALLSOURCES = $(TEXSOURCES) $(BIBSOURCES) $(BSTSOURCES) $(STYSOURCES)
 
 BUILDFILES = *.aux *.log *.bbl *.blg *.dvi *.tmp *.out *.blg *.bbl *.toc *.lof *.lot
 

@@ -3,102 +3,109 @@
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\input{style}
-\leftheader{5301, James Clerk Maxwell Building\\Peter Guthrie Tait Road\\Edinburgh, EH9 3FD}
-\rightheader[r]{+44 7719 773067\\{\tt adam.morris@cern.ch}}
+\usepackage{sansmathfonts}
 \title{Adam Morris}
+\input{style}
 \newcommand\dateditem[2]{\vspace{0.5em}#1\hfill#2\par}
-\newcommand\topictitle[3]{\par\dateditem{{\textbf{#1}}}{#3}#2}
+\newcommand\topictitle[3]{\par\dateditem{#1}{#3}{\color{darkgray}#2}}
 \begin{document}
-	\maketitle
 	\fontfamily{\typeface}\selectfont
+	\noindent\begin{minipage}{0.33\textwidth}
+	CPPM, Case 902\\163, avenue de Luminy\\13288 Marseille cedex 09
+	\end{minipage}
+	\noindent\begin{minipage}{0.33\textwidth}
+	\centering
+	\huge Adam Morris
+	\end{minipage}
+	\noindent\begin{minipage}{0.33\textwidth}
+	\raggedleft
+	+44 7719 773067\\+33 652 61 29 16\\{adam.morris@cern.ch}
+	\end{minipage}
 %	\section{Personal statement}
-	I am a finishing PhD student with the LHCb group at the University of Edinburgh.
-	My thesis was submitted at the start of August, and my viva is scheduled for the end of September.
-	I have been recently hired as a short-term postdoc with the Edinburgh group, and I will therefore be able to start a new job in January 2018.
 	\section{Employment}
-	\topictitle{Postdoctoral research associate}{University of Edinburgh}{Aug 2017 --- Dec 2017}
-	\begin{topic}
-		\topsep0em
-		\item[Description]{Four month contract to work on an amplitude analysis of $\Lambda_b \to \chi_{c\{1,2\}} p K^{-}$ decays.}
-	\end{topic}
+	\topictitle{Postdoctoral researcher}{CNRS and Aix-Marseille University}{Dec 2017 --- Feb 2020}
+	\topictitle{Postdoctoral research associate}{University of Edinburgh}{Aug 2017 --- Nov 2017}
 	\section{Education}
 	\topictitle{PhD in experimental particle physics}{University of Edinburgh}{Sep 2013 --- Sep 2017}
 	\begin{topic}
-	\itemsep-0.3em
+	\itemsep-0.5em
 		\item[Thesis title]{\textit{Measurements of charmless $B_s$ meson decays at LHCb}}
+%		\item[Reference]{\href{https://cds.cern.ch/record/2293045}{CERN-THESIS-2017-235}}
 		\item[Supervisors]{Matthew Needham and Franz Muheim}
-		\item[Status]{Thesis submitted; awaiting Viva}
 	\end{topic}
 	\topictitle{MSci in physics}{University of Birmingham}{Oct 2009 --- Jul 2013}
 	\begin{topic}
-	\itemsep-0.3em
+		\itemsep-0.5em
 		\item[Thesis title]{\textit{A possible lepton flavour violation search at NA62}}
 		\item[Supervisors]{Cristina Lazzeroni and Evgueni Goudzovski}
-		\item[Classification]{Upper second class honours}
+%		\item[Classification]{Upper second class honours}
 	\end{topic}
-	\section{Physics analysis}
-	\topictitle{Amplitude analysis of $\Lambda_b \to \chi_{c\{1,2\}} p K^{-}$ decays}{}{2017 --- \phantom{2017}}
-	Amplitude fits to $\Lambda_b \to \chi_{c1} p K^{-}$ and $\Lambda_b \to \chi_{c2} p K^{-}$ decays using data from Runs 1 and 2, with a focus on searching for pentaquarks decaying to $\chi_{c\{1,2\}} p$.
-	My role is to develop the eight-dimensional fitter, within a framework based on TensorFlow, to run on a GPU computing cluster.
-	\topictitle{Amplitude analysis of $B^0_s \to \phi K^{+}K^{-}$ decays}{}{2015 --- 2017}
-	An amplitude fit to ${B^0_s \to \phi K^{+}K^{-}}$ events with ${m(K^{+}K^{-})<1.8}$~GeV. The decay ${B^0_s \to \phi f_2^\prime(1525)}$ is observed for the first time, and measurements are made of its branching fraction and longitudinal polarisation fraction.
-	This is my primary thesis work, and I was responsible for performing the analysis, from selection, modelling the acceptance, signal and background, fitting the data and calculating results and systematic uncertainties.
-	\topictitle{Measurement of the $B^0_s \to \phi\phi$ branching fraction and search for $B^0 \to \phi \phi$~\textnormal{\cite{phiphiBF}}}{}{2014 --- 2015}
-	The $B^0_s \to \phi\phi$ branching fraction was measured using $B^0 \to \phi K^{*0}$ for normalisation, resulting in a factor of five reduction in the statistical uncertainty compared to the previous best result.
-%	This is an important normalisation channel for charmless $B$ decay measurements, such as $B_s \to \phi \pi^{+} \pi^{-}$.
-	In addition, a search was performed for the suppressed $B^0 \to \phi\phi$ decay, and an upper limit placed on its branching fraction, which is a factor of seven improvement compared to the previous best result.
-	This analysis forms part of my thesis work, and I was responsible for the mass fits and most of the calculations of efficiencies and systematics, as well as setting the limit on the $B^0$ mode using the $CL_s$ method.
-	\topictitle{Measurement of CP violation in $B^0_s \to \phi\phi$ decays~\textnormal{\cite{phiphiCPV}}}{}{2013 --- 2014}
-	A time-dependent angular fit performed to $B^0_s \to \phi\phi$ events to extract the weak phase $\phi_s$, which is expected to be close to zero due to cancellation between the leading-order mixing and decay diagrams.
-	I was responsible for parametrising the peaking backgrounds and performing fits to the $\phi\phi$ invariant mass to obtain event yields.
-	\section{Hardware and operations}
-	\topictitle{LHCb control room shifts (4$\times$ shift leader \& 11$\times$ data manager)}{}{2015 --- 2016}
+	\section{Contributions to physics analysis}
+	\topictitle{Measurement of $R(D^*)$ using hadronic $\tau$ decays}{Major contributions to all parts of the analysis as one of two full-time proponents}{2017 --- 2020}
+	\topictitle{Amplitude analysis of $\Lambda_b \to \chi_{c\{1,2\}} p K^{-}$ decays}{Development of the amplitude fitter within the TensorFlowAnalysis framework.}{2017}
+	\topictitle{Amplitude analysis of $B^0_s \to \phi K^{+}K^{-}$ decays}{Primary thesis work and sole full-time proponent.}{2015 --- 2017}
+	\topictitle{Measurement of the $B^0_s \to \phi\phi$ branching fraction and search for $B^0 \to \phi \phi$}{Thesis work and sole full-time proponent.}{2014 --- 2015}
+	\topictitle{Measurement of CP violation in $B^0_s \to \phi\phi$ decays}{Fits to the $\phi\phi$ invariant mass.}{2013 --- 2014}
+	\section{Hardware work}
+	\topictitle{Ion feedback monitoring}{
+	Periodic analysis of the level of ion feedback in the HPDs installed in the RICH to predict when they need to be replaced.
+	}{2015 --- 2016}
+	\topictitle{RICH upgrade testbeam}{
+	Participant in 4 testbeam periods, during which I took data-taking shifts and improved the automation of the data acquisition and processing. I performed the dark count analysis and developed an online alignment tool.
+	}{2014 --- 2016}
+	\topictitle{Performance of MaPMTs in magnetic fields}{
+	Per-pixel efficiency measurements as a function of magnetic field strength. This work was the basis of the decision to use $\mu$-metal shielding in the RICH upgrade.
+	}{2013 --- 2014}
+	\section{Shifts and responsibilities}
+	\topictitle{MC production model manager}{}{2019 --- \phantom{2020}}
+	\topictitle{Filtered MC liaison}{}{2018 --- \phantom{2020}}
+	\topictitle{Semileptonic WG MC liaison}{}{2018 --- \phantom{2020}}
+	\topictitle{Review Committee member}{Measurement of the $\eta_c(1S)$ production cross-section at $\sqrt{s}=13$ TeV}{2018 --- 2019}
+	\topictitle{L0 piquet shifts (3 weeks)}{}{2018}
+	\topictitle{LHCb control room shifts (13$\times$ shift leader \& 11$\times$ data manager)}{}{2015 --- 2018}
 	\topictitle{RICH piquet shifts (3 weeks)}{}{2015 --- 2016}
-	\topictitle{Ion feedback monitoring of the RICH HPDs}{}{2015 --- 2016}
-	\topictitle{RICH upgrade testbeam}{}{2014 --- 2016}
-	I participated in 4 testbeam periods, during which I took data-taking shifts and improved the automation of the data acquisition and processing. I performed the dark count analysis (see Ref.~\cite{testbeam}) and developed an online alignment tool.
-	\topictitle{Performance of MaPMTs in magnetic fields for the RICH upgrade~\cite{mapmt}}{}{2013 --- 2014}
-	I measured the drop in efficiency of the multi-anode photomultipliers, selected for the RICH upgrade, as a function of magnetic field strength applied along different axes for different operating voltages.
-	This study led to the conclusion that, under the operating conditions at LHCb, magnetic shielding is required to achieve 90\% efficiency for all anodes.
-	\section{Schools, workshops and conferences}
-	\topictitle{Exotic hadron spectroscopy workshop}{}{University of Edinburgh, September 2016}
-	\topictitle{Heavy Quarks and Leptons (HQL) conference}{Talk: \textit{Charmless $b$-meson and $b$-baryon decays at LHCb}~\cite{HQL}}{Virginia Tech, May 2016}
+	\section{Conferences and workshops}
+	\topictitle{GDR Intensity Frontier Annual Meeting}{Talk: \textit{Lepton flavour universality in $b \to c$ transitions}}{Sommi\`eres, November 2019}
+	\topictitle{European Physical Society Conference on High Energy Physics (EPS-HEP)}{Talk: \textit{$C\!P$ violation in multi-body charmless $b$-hadron decays at LHCb}}{Ghent, July 2019}
+	\topictitle{XIII Franco-Italian Meeting on B Physics}{Talk: \textit{Lepton flavour universality violating B decays in trees}}{Aix-Marseille University, October 2018}
+	\topictitle{10th International Workshop on the CKM Unitarity Triangle}{Talk: \textit{Tests of lepton flavour universality using semitauonic B decays at LHCb}}{Heidelberg University, September 2018}
+	\topictitle{PyHEP 2018}{Talk: \textit{Using TensorFlow for amplitude fits}}{Sofia, July 2018}
+%	\topictitle{Exotic hadron spectroscopy workshop}{}{University of Edinburgh, September 2016}
+	\topictitle{Heavy Quarks and Leptons (HQL)}{Talk: \textit{Charmless $b$-meson and $b$-baryon decays at LHCb}}{Virginia Tech, May 2016}
 	\topictitle{LHCC Poster Session}{Poster: \textit{Measurement of the $B_s \to \phi \phi$ branching fraction and angular analysis of $B_s \to \phi \pi^{+} \pi^{-}$ at LHCb}}{CERN, March 2016}
-	\topictitle{UK HEP forum: ``Anomalies and Deviations'' workshop}{Poster: \textit{Measurement of the $B_s \to \phi \phi$ branching fraction and search for $B^0 \to \phi \phi$ at LHCb}}{STFC, Abingdon, November 2015}
-	\topictitle{European School of High-Energy Physics}{}{Bansko, Bulgaria, September 2015}
-	\topictitle{Young Experimentalists and Theorists Institute (YETI) workshop}{}{Durham University, January 2015}
+	\topictitle{UK HEP forum: ``Anomalies and Deviations''}{Poster: \textit{Measurement of the $B_s \to \phi \phi$ branching fraction and search for $B^0 \to \phi \phi$ at LHCb}}{STFC, Abingdon, November 2015}
+	\topictitle{B-physics at frontier machines (Beauty)}{Poster: \textit{Measurement of CP violation in $B^0_s \to \phi\phi$ decay}}{University of Edinburgh, July 2014}
+	\section{Schools attended}
+	\topictitle{Ecole de Gif}{}{Clermont-Ferrand, September 2018}
+	\topictitle{IN2P3 School Of Statistics}{}{La Londe Les Maures, May 2018}
+	\topictitle{European School of High-Energy Physics}{}{Bansko, September 2015}
+	\topictitle{Young Experimentalists and Theorists Institute (YETI)}{}{Durham University, January 2015}
 	\topictitle{STFC HEP summer school}{}{University of Warwick, September 2014}
-	\topictitle{B-physics at frontier machines (Beauty) conference}{Poster: \textit{Measurement of CP violation in $B^0_s \to \phi\phi$ decays~\cite{beauty}}}{University of Edinburgh, July 2014}
-	\section{Public outreach}
-	\dateditem{Participant in an \href{http://cds.cern.ch/record/2024978}{`Ask Me Anything' session organised by CERN on \textit{reddit.com}}}{May 2015}
-	\dateditem{Participant in a \textit{Speed Science} event at the \textit{Glasgow Science Festival}}{June 2014}
-	\dateditem{Demonstrator at the \textit{Discovering the Higgs Boson} exhibit at the \textit{Big Bang Fair}, Birmingham NEC}{March 2014}
-	\section{Skills}
+%	\section{Public outreach}
+%	\dateditem{Participant in an \href{http://cds.cern.ch/record/2024978}{`Ask Me Anything' session organised by CERN on \textit{reddit.com}}}{May 2015}
+%	\dateditem{Participant in a \textit{Speed Science} event at the \textit{Glasgow Science Festival}}{June 2014}
+%	\dateditem{Demonstrator at the \textit{Discovering the Higgs Boson} exhibit at the \textit{Big Bang Fair}, Birmingham NEC}{March 2014}
+%	\section{Skills}
+%	\vspace{0.5em}
+%	\begin{itemize}
+%		\item HEP data analysis techniques: multivariate selection, maximum-likelihood fits, amplitude analysis and limit-setting
+%		\item Proficiency with C++, Python and shell scripting.
+%		\item Familiarity with ROOT (incl. TMVA, RooFit and RooStats), GSL, Boost and the LHCb software
+%		\item Experience using parallel computing resources, such as the Edinburgh and CERN batch services and the LHC Grid
+%		\item Frequent user of version control systems (Git and SVN) and experience with collaborative software development
+%	\end{itemize}
+	\section{Papers}
 	\vspace{0.5em}
-	\begin{itemize}
-		\item HEP data analysis techniques: multivariate selection, maximum-likelihood fits, amplitude analysis and limit-setting
-		\item Proficiency with C++, Python and shell scripting.
-		\item Familiarity with ROOT (incl. TMVA, RooFit and RooStats), GSL, Boost and the LHCb software
-		\item Experience using parallel computing resources, such as the Edinburgh and CERN batch services and the LHC Grid
-		\item Frequent user of version control systems (Git and SVN) and experience with collaborative software development
-	\end{itemize}
-	\section{Publications}
+		\textit{Characterisation and magnetic field properties of multianode photomultiplier tubes},\\ S. Eisenhart \textit{et al}, \href{http://dx.doi.org/10.1016/j.nima.2014.05.036}{Nucl. Instrum. Meth. \textbf{A766} (2014) 167-170}\\[1ex]
+		\textit{Measurement of CP violation in $B^0_s \to \phi\phi$ decays},\\ LHCb collaboration, \href{http://dx.doi.org/10.1103/PhysRevD.90.052011}{Phys. Rev. \textbf{D90}, (2014) 052011}\\[1ex]
+		\textit{Measurement of the $B^0_s \to \phi\phi$ branching fraction and search for the decay $B^0 \to \phi \phi$},\\ LHCb collaboration, \href{http://dx.doi.org/10.1007/JHEP10(2015)053}{JHEP \textbf{10} (2015) 053}\\[1ex]
+		\textit{Test of the photon detection system for the LHCb RICH Upgrade in a charged particle beam},\\ M. K. Baszscyk \textit{et al}, \href{http://cds.cern.ch/record/2197586}{JINST \textbf{12} (2017) 01012}\\[1ex]
+		\textit{Oscillations of $B_s^0$ mesons as a probe of decays with invisible particles},\\ A. Poluektov and A. Morris, \href{https://arxiv.org/abs/1911.12729}{arXiv:1911.12729 [hep-ph]}, submitted to JHEP
+	\section{Proceedings}
 	\vspace{0.5em}
-	\renewcommand{\topicmargin}{5em}
-	\subsection{Papers}
-	\begin{thebibliography}{1}
-		\itemsep-0.3em
-		\bibitem{phiphiBF}\textit{Measurement of the $B^0_s \to \phi\phi$ branching fraction and search for the decay $B^0 \to \phi \phi$},\\LHCb collaboration, \href{http://dx.doi.org/10.1007/JHEP10(2015)053}{JHEP \textbf{10} (2015) 053}
-		\bibitem{phiphiCPV}\textit{Measurement of CP violation in $B^0_s \to \phi\phi$ decays},\\LHCb collaboration, \href{http://dx.doi.org/10.1103/PhysRevD.90.052011}{Phys. Rev. \textbf{D90}, (2014) 052011}
-		\bibitem{testbeam}\textit{Test of the photon detection system for the LHCb RICH Upgrade in a charged particle beam},\\M. K. Baszscyk \textit{et al}, \href{http://cds.cern.ch/record/2197586}{LHCb-PUB-2016-019}, to be submitted to JINST
-	\end{thebibliography}
-	\subsection{Proceedings}
-	\begin{thebibliography}{2}
-		\itemsep-0.3em
-		\bibitem{mapmt}\textit{Characterisation and magnetic field properties of multianode photomultiplier tubes},\\S. Eisenhart \textit{et al}, on behalf of the LHCb RICH collaboration, \href{http://dx.doi.org/10.1016/j.nima.2014.05.036}{Nucl. Instrum. Meth. \textbf{A766} (2014) 167-170}
-		\bibitem{HQL}\textit{Charmless b-meson and b-baryon decays at LHCb},\\A. Morris, on behalf of the LHCb collaboration, \href{https://pos.sissa.it/cgi-bin/reader/contribution.cgi?id=274/059}{PoS (HQL 2016) 059}
-		\bibitem{beauty}\textit{Measurement of CP violation in $B^0_s \to \phi\phi$ decays},\\A. Morris, on behalf of the LHCb collaboration, \href{https://pos.sissa.it/cgi-bin/reader/contribution.cgi?id=216/064}{PoS (Beauty 2014) 064}
-	\end{thebibliography}
+		\textit{Measurement of CP violation in $B^0_s \to \phi\phi$ decays},\\ A. Morris, on behalf of the LHCb collaboration, \href{https://pos.sissa.it/cgi-bin/reader/contribution.cgi?id=216/064}{PoS (Beauty 2014) 064}\\[1ex]
+		\textit{Charmless b-meson and b-baryon decays at LHCb},\\ A. Morris, on behalf of the LHCb collaboration, \href{https://pos.sissa.it/cgi-bin/reader/contribution.cgi?id=274/059}{PoS (HQL 2016) 059}\\[1ex]
+		\textit{Using TensorFlow for amplitude fits},\\ A. Morris, on behalf of the TensorFlowAnalysis developers, \href{https://doi.org/10.5281/zenodo.1415413}{DOI:10.5281/zenodo.1415413}\\[1ex]
+		\textit{$C\!P$ violation in multi-body charmless $b$-hadron decays at LHCb},\\ A. Morris, on behalf of the LHCb collaboration, PoS (EPS-HEP 2019) 215\\[1ex]
 \end{document}
 
